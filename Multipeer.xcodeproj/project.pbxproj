@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E68A3E29204FE00500C55F17 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A3E28204FE00500C55F17 /* UserDefaults.swift */; };
+		E68A3E762052EE8200C55F17 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A3E752052EE8200C55F17 /* DisplayViewController.swift */; };
 		E6A88B33204EA8D3006E5167 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B32204EA8D3006E5167 /* AppDelegate.swift */; };
 		E6A88B35204EA8D3006E5167 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B34204EA8D3006E5167 /* ViewController.swift */; };
 		E6A88B38204EA8D3006E5167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A88B36204EA8D3006E5167 /* Main.storyboard */; };
@@ -14,6 +16,9 @@
 		E6A88B3D204EA8D3006E5167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A88B3B204EA8D3006E5167 /* LaunchScreen.storyboard */; };
 		E6A88B48204EA8D3006E5167 /* MultipeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B47204EA8D3006E5167 /* MultipeerTests.swift */; };
 		E6A88B53204EA8D3006E5167 /* MultipeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B52204EA8D3006E5167 /* MultipeerUITests.swift */; };
+		E6A88B61204EAB41006E5167 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B60204EAB41006E5167 /* SendViewController.swift */; };
+		E6A88B67204F69C1006E5167 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A88B66204F69C1006E5167 /* CloudKit.framework */; };
+		E6A88B69204F6A29006E5167 /* iCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A88B68204F6A29006E5167 /* iCloud.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E68A3E28204FE00500C55F17 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		E68A3E752052EE8200C55F17 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		E6A88B2F204EA8D3006E5167 /* Multipeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multipeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A88B32204EA8D3006E5167 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6A88B34204EA8D3006E5167 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,10 @@
 		E6A88B4E204EA8D3006E5167 /* MultipeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultipeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A88B52204EA8D3006E5167 /* MultipeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipeerUITests.swift; sourceTree = "<group>"; };
 		E6A88B54204EA8D3006E5167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A88B60204EAB41006E5167 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		E6A88B62204F69B9006E5167 /* Multipeer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multipeer.entitlements; sourceTree = "<group>"; };
+		E6A88B66204F69C1006E5167 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		E6A88B68204F6A29006E5167 /* iCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A88B67204F69C1006E5167 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E68A3E772052EE9200C55F17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6A88B36204EA8D3006E5167 /* Main.storyboard */,
+				E68A3E752052EE8200C55F17 /* DisplayViewController.swift */,
+				E6A88B60204EAB41006E5167 /* SendViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E6A88B26204EA8D3006E5167 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 				E6A88B46204EA8D3006E5167 /* MultipeerTests */,
 				E6A88B51204EA8D3006E5167 /* MultipeerUITests */,
 				E6A88B30204EA8D3006E5167 /* Products */,
+				E6A88B63204F69BD006E5167 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +120,12 @@
 		E6A88B31204EA8D3006E5167 /* Multipeer */ = {
 			isa = PBXGroup;
 			children = (
+				E6A88B62204F69B9006E5167 /* Multipeer.entitlements */,
 				E6A88B32204EA8D3006E5167 /* AppDelegate.swift */,
 				E6A88B34204EA8D3006E5167 /* ViewController.swift */,
-				E6A88B36204EA8D3006E5167 /* Main.storyboard */,
+				E68A3E772052EE9200C55F17 /* Views */,
+				E6A88B68204F6A29006E5167 /* iCloud.swift */,
+				E68A3E28204FE00500C55F17 /* UserDefaults.swift */,
 				E6A88B39204EA8D3006E5167 /* Assets.xcassets */,
 				E6A88B3B204EA8D3006E5167 /* LaunchScreen.storyboard */,
 				E6A88B3E204EA8D3006E5167 /* Info.plist */,
@@ -123,6 +149,14 @@
 				E6A88B54204EA8D3006E5167 /* Info.plist */,
 			);
 			path = MultipeerUITests;
+			sourceTree = "<group>";
+		};
+		E6A88B63204F69BD006E5167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6A88B66204F69C1006E5167 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +228,14 @@
 					E6A88B2E204EA8D3006E5167 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					E6A88B42204EA8D3006E5167 = {
 						CreatedOnToolsVersion = 9.2;
@@ -260,7 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6A88B35204EA8D3006E5167 /* ViewController.swift in Sources */,
+				E68A3E762052EE8200C55F17 /* DisplayViewController.swift in Sources */,
+				E68A3E29204FE00500C55F17 /* UserDefaults.swift in Sources */,
 				E6A88B33204EA8D3006E5167 /* AppDelegate.swift in Sources */,
+				E6A88B61204EAB41006E5167 /* SendViewController.swift in Sources */,
+				E6A88B69204F6A29006E5167 /* iCloud.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +472,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Multipeer/Multipeer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9EHN3VSJZ;
 				INFOPLIST_FILE = Multipeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lucianolang.Multipeer;
@@ -440,7 +488,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Multipeer/Multipeer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H9EHN3VSJZ;
 				INFOPLIST_FILE = Multipeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lucianolang.Multipeer;
